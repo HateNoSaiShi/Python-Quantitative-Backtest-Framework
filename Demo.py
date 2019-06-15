@@ -25,7 +25,7 @@ def Demo():
     rolling_day_len = 80
     start_date = date_list[rolling_day_len]
     exchange = myBacktest.BizHandler.Exchange(start_date, exchange_database)
-    account = myBacktest.AccountHandlerNew.Account(exchange)
+    account = myBacktest.AccountHandler.Account(exchange)
     account.SetInitialCash(10000000)
     account.Initialize('day')
     account.SetEtfTransactionFee(0, 0)
